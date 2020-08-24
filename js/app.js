@@ -57,8 +57,8 @@ const isInViewport = (elem) => {
   const bounding = elem.getBoundingClientRect();
 
   return (
-    bounding.top >= -300 &&
-    bounding.left >= 0 &&
+    bounding.top > -280 &&
+    bounding.left > 0 &&
     bounding.bottom <=
       (window.innerHeight || document.documentElement.clientHeight) &&
     bounding.right <=
